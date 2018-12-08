@@ -35,3 +35,14 @@ injection.
 ● Injected requests are now again encrypted before sending to server.
 ● Received encrypted response body parameters are decrypted before sending to scanner
 or shown to user.
+
+Next Steps:
+Currently we are working on making our extender easier in carrying out manual exploitation. We
+are adding a new message tab where the decrypted/encrypted request/response is shown in UI.
+
+Conclusion:
+This extender makes it more transparent for pentesters to manipulate any parameters as
+desired. Even if SSL layer is bypassed without decrypting message layer either pentester or
+scanner will be ineffective in identifying vulnerabilities and injecting payloads. Applications
+where message layer is encrypted, can be successfully scanned and exploited using our
+extender.
